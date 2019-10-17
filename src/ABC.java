@@ -3,7 +3,7 @@ import java.util.*;
 public class ABC{
 
 	public static void main(String[] args) {
-		int a, b, c, tmp;
+		int a, b, c;
 		Scanner scan = new Scanner(System.in);
 
 		a = scan.nextInt();
