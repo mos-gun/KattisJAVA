@@ -1,51 +1,31 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class CD {
-
 	public static void main(String[] args) {
-
-		Scanner scanner = new Scanner(System.in);
-		int numOfJack, numOfJill, numOfDuplicates, temp;
-		HashSet<Integer> setCDs;
-//		int[] arrCDs;
-		ArrayList<Integer> listResults = new ArrayList<>();
+		Kattio io = new Kattio(System.in, System.out);
+		int n, m, counter;
+//		HashSet<Integer> setCDs = new HashSet<>();
+		int[] arrCDs;
 
 		while (true) {
+			n = io.getInt();
+			m = io.getInt();
 
-			numOfJack = scanner.nextInt();
-			numOfJill = scanner.nextInt();
+			if (n == 0 && m == 0) break;
+			arrCDs = new int[n];
+			counter = 0;
 
-			if (numOfJack == 0 && numOfJill == 0) {
-				break;
+			for (int i = 0; i < n; i++) {
+//				setCDs.add(io.getInt());
+				arrCDs[i] = io.getInt();
 			}
 
-			setCDs = new HashSet<>();
-//			arrCDs = new int[numOfJack + numOfJill];
-			numOfDuplicates = 0;
-			
-			for (int i = 0; i < numOfJack + numOfJill; i++) {
-				temp = scanner.nextInt();
-				if (! setCDs.add(temp)) {
-					numOfDuplicates++;
-				}
-//				arrCDs[i] = scanner.nextInt();
+			for (int i = 0; i < m; i++) {
+//				if (! setCDs.add(io.getInt())) counter++;								// Wrong answer second testcase
+				if(Arrays.binarySearch(arrCDs, io.getInt()) >= 0) counter++;
 			}
-
-//			Arrays.sort(arrCDs);
-			
-//			for (int i = 1; i < numOfJack + numOfJill; i++) {
-//				if(arrCDs[i] == arrCDs[i-1]) numOfDuplicates++;
-//			}
-			
-			listResults.add(numOfDuplicates);
+			System.out.println(counter);
 		}
-
-		for (int element : listResults) {
-			System.out.println(element);
-		}
-		
 	}
 }

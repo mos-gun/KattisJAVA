@@ -1,29 +1,21 @@
 //import java.util.Scanner;
 //
-//public class AnotherCandies {													// RUNTIME ERROR
+//public class AnotherCandies {														// RTE
 //	public static void main(String[] args) {
 //		Scanner scanner = new Scanner(System.in);
-//		int numOfCases, numOfChildren, numOfCandy;
-//		String line;
-//		String[] answers;
+//		int numOfCases, numOfChildren, sum;
 //
-//		numOfCases = Integer.parseInt(scanner.nextLine());
-//		answers = new String[numOfCases];
+//		numOfCases = scanner.nextInt();
 //
 //		for (int i = 0; i < numOfCases; i++) {
-//			System.out.println();
-//			line = scanner.nextLine();
-//			numOfChildren = Integer.parseInt(line);
-//			numOfCandy = 0;
+//			numOfChildren = scanner.nextInt();
+//			sum = 0;
+//			
 //			for (int j = 0; j < numOfChildren; j++) {
-//				numOfCandy += Integer.parseInt(scanner.nextLine());
+//				sum +=scanner.nextInt();
 //			}
-//			if (numOfCandy % numOfChildren == 0) {
-//				answers[i] = "YES";
-//			} else answers[i] = "NO";
-//		}
-//		for (String element : answers) {
-//			System.out.println(element);
+//			if(sum % numOfChildren == 0) System.out.println("YES");
+//			else System.out.println("NO");
 //		}
 //	}
 //}
