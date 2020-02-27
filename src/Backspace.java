@@ -3,6 +3,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
+/**
+ * Ausgewählte Probleme aus dem ACM Programming Contest  WS 2019/20
+ * Problem:  backspace Backspace
+ * Link: https://open.kattis.com/problems/backspace ;
+ *
+ * @author Mosgun Mahdere
+ * @version 1.0, 11/23/2019
+ * Method : none
+ * Status : ACCEPTED
+ * Runtime: 0.23s
+ */
 public class Backspace {
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

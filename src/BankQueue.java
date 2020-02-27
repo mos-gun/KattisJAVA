@@ -1,5 +1,16 @@
 import java.util.*;
 
+/**
+ * Ausgewählte Probleme aus dem ACM Programming Contest  WS 2019/20
+ * Problem:  bank Bank Queue
+ * Link: https://open.kattis.com/problems/bank ;
+ *
+ * @author Mosgun Mahdere
+ * @version 1.0, 08/15/2019
+ * Method : queue
+ * Status : ACCEPTED
+ * Runtime: 0.37s
+ */
 public class BankQueue {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -11,7 +22,6 @@ public class BankQueue {
 		minutes = Integer.parseInt(scanner.nextLine().trim());
 
 		customers = new int[numOfPeople][2];
-
 
 		for (int i = 0; i < numOfPeople; i++) {
 			customers[i][0] = scanner.nextInt();

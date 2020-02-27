@@ -1,11 +1,20 @@
 import java.util.Arrays;
-import java.util.HashSet;
 
+/**
+ * Ausgewählte Probleme aus dem ACM Programming Contest  WS 2019/20
+ * Problem:  cd CD
+ * Link: https://open.kattis.com/problems/cd ;
+ *
+ * @author Mosgun Mahdere
+ * @version 1.0, 11/08/2019
+ * Method : none
+ * Status : ACCEPTED
+ * Runtime: 0.85s
+ */
 public class CD {
 	public static void main(String[] args) {
 		Kattio io = new Kattio(System.in, System.out);
 		int n, m, counter;
-//		HashSet<Integer> setCDs = new HashSet<>();
 		int[] arrCDs;
 
 		while (true) {
@@ -17,12 +26,10 @@ public class CD {
 			counter = 0;
 
 			for (int i = 0; i < n; i++) {
-//				setCDs.add(io.getInt());
 				arrCDs[i] = io.getInt();
 			}
 
 			for (int i = 0; i < m; i++) {
-//				if (! setCDs.add(io.getInt())) counter++;								// Wrong answer second testcase
 				if(Arrays.binarySearch(arrCDs, io.getInt()) >= 0) counter++;
 			}
 			System.out.println(counter);
