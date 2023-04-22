@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -8,8 +7,6 @@ public class SortOfSorting {
         Scanner scanner = new Scanner(System.in);
         int numOfInputs;
         ArrayList<String> listInput;
-
-        numOfInputs = -1;
 
         while ((numOfInputs = scanner.nextInt()) != 0) {
             scanner.nextLine();
@@ -25,6 +22,5 @@ public class SortOfSorting {
             }
             System.out.println();
         }
-
     }
 }
